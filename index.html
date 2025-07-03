@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Definição do charset para UTF-8 -->
+  <meta charset="utf-8" />
+  <!-- Configuração para responsividade em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Instruções para robôs de busca -->
+  <meta name="robots" content="index,follow">
+  <!-- Descrição da página para SEO -->
+  <meta name="description" content="produtos do flamengo confira essa seção de produtos do flamengo">
+  <!-- Palavras-chave para SEO -->
+  <meta name="keywords" content="flamengo,produto,itens,campeonato,flamengo,brasileirao,futebolcarioca">
+
+  <style>
+    /* Estilo geral do corpo da página */
+    body {
+      background-color: red; /* Fundo vermelho */
+      color: white; /* Texto branco */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif; /* Fonte usada */
+    }
+
+    /* Estilo do container de propagandas */
+    #ads {
+      font-size: 18px;
+      text-align: center;
+      padding: 20px;
+      max-width: 90%;
+      margin: 5% auto 0 auto;
+    }
+
+    /* Estilo da tabela */
+    table {
+      width: 100%;
+      border-collapse: collapse; /* Remove espaçamento entre bordas */
+    }
+
+    /* Estilo das células da tabela */
+    table th, table td {
+      border: 2px solid white; /* Borda branca sólida */
+      padding: 10px;
+      word-break: break-word; /* Quebra palavras longas */
+    }
+
+    /* Estilo dos links */
+    a {
+      color: white; /* Cor branca */
+      text-decoration: none; /* Sem sublinhado */
+      font-weight: bold; /* Negrito */
+    }
+
+    /* Efeito hover nos links */
+    a:hover {
+      text-decoration: underline; /* Sublinhado ao passar mouse */
+    }
+
+    /* Estilo da div #hash */
+    #hash {
+      background-color: blueviolet; /* Fundo azul violeta */
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 16px;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+
+    /* Container das notícias */
+    #noticias {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #111; /* Fundo escuro */
+      border: 1px solid #333;
+      border-radius: 8px; /* Cantos arredondados */
+    }
+
+    /* Container dos vídeos do YouTube */
+    #youtubes {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #111; /* Fundo escuro */
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+
+    /* Estilo para cada notícia */
+    .noticia {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-bottom: 1px solid #555; /* Linha separadora */
+    }
+
+    /* Título das notícias */
+    .noticia h3 {
+      color: #ffcc00; /* Amarelo */
+      margin-bottom: 8px;
+    }
+
+    /* Texto das notícias */
+    .noticia p {
+      color: #ccc; /* Cinza claro */
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 600px) {
+      #ads {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      table th, table td {
+        font-size: 12px;
+        padding: 6px;
+      }
+
+      #hash {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Seção de propagandas -->
+  <div id="ads">
+    <h1>ITENS DO FLAMENGO</h1>
+    <table id="ok">
+      <tr>
+        <th>Nome PRODUTO</th>
+        <!-- Link de propaganda secundária -->
+        <th><a href="#" id="propaganda2" target="_blank" rel="noopener noreferrer">CARREGANDO...</a></th>
+        <!-- Link de propaganda principal -->
+        <th><a href="#" id="propaganda" target="_blank" rel="noopener noreferrer">CARREGANDO...</a></th>
+      </tr>
+    </table>
+
+    <!-- Div para conteúdo único (hash aleatório) -->
+    <div id="hash">Carregando conteúdo único...</div>
+  </div>
+
+  <!-- Container para vídeos do YouTube -->
+  <div id="youtubes">
+    <div id="youtube">
+      <h2>Vídeo do Flamengo</h2>
+      <!-- Div onde o vídeo será inserido -->
+      <div id="video-container" style="text-align:center; margin-bottom: 15px;"></div>
+      <!-- Botão para trocar vídeo -->
+      <button onclick="trocarVideo()" style="padding:10px 20px; background:#ffcc00; border:none; font-weight:bold; cursor:pointer;">
+        Trocar Vídeo
+      </button>
+    </div>
+  </div>
+
+  <!-- Seção de notícias -->
+  <div id="noticias">
+    <h2>Últimas Notícias do Flamengo</h2>
+    <!-- Notícias serão inseridas aqui via JavaScript -->
+  </div>
+
+  <script>
+    // Array com links para propagandas 1 (diversos serviços)
+    const links1 = [
+      { link: "https://ocomerciobrasileironoticia.blogspot.com/2025/05/erp-profissional-para-empresas.html", mensagem: "ERP PROFISSIONAL" },
+      { link: "https://wa.me/5527999497001", mensagem: "SEGURO REGIONAL E CONSÓRCIOS" },
+      { link: "https://geocredibnkvitoria.com/", mensagem: "💰 Crédito rápido em Vitória" },
+      { link: "https://central.dokehost.com.br/aff.php?aff=90", mensagem: "Hospedagem profissional ES" },
+      { link: "https://hostinger.com.br", mensagem: "Crie seu site com desconto!" },
+      { link: "https://jogosantigos472302513.wordpress.com/", mensagem: "Jogos antigos" },
+      { link: "https://www.instagram.com/reel/DHoqFcwRH7x/", mensagem: "Problema capilar? Veja isso!" },
+      { link: "https://wa.me/5527999497001", mensagem: "SEGURO REGIONAL E CONSÓRCIOS" },
+      { link: "https://geocredibnkvitoria.com/", mensagem: "💰 Crédito rápido em Vitória" },
+      { link: "https://central.dokehost.com.br/aff.php?aff=90", mensagem: "Hospedagem profissional ES" },
+      { link: "https://hostinger.com.br", mensagem: "Crie seu site regional com desconto!" },
+      { link: "https://ocomerciobrasileironoticia.blogspot.com/2025/05/erp-profissional-para-empresas.html", mensagem: "ERP PROFISSIONAL" },
+      { link: "https://jogosantigos472302513.wordpress.com/confira-essas-empresas/", mensagem: "CONFIRA ESSAS EMPRESAS!" },
+      { link: "https://www.youtube.com/@gamenologia", mensagem: "confira esse canal" },
+      { link: "https://brasilbrasileiross.blogspot.com/", mensagem: "portal brasil" },
+      {link:"https://filmeseserie.com.br/empresa/",mensagem:"conferir essas empresas"},
+      {link:"https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g",mensagem:'Airbnb comece hj mesmo'},
+      {link:"https://hostinger.com.br/?REFERRALCODE=1VICTOR444",mensagem:'crie seu site com a hostinger hj mesmo'},
+      {link:"https://laudobancriotimline.netlify.app/",mensagem:'🧾 Laudo Pericial Bancário:'},
+      {link:"https://espiritosanto-es.com.br/linhadotempovitoria/",mensagem:"linha do tempo vitória"}
+    ];
+
+    // Array com links para propagandas 2 (ofertas específicas)
+    const links2 = [
+      { link: "https://loja.flamengo.com.br/mochila-flamengo-adidas-2025/p", mensagem: "mochila do flamengo confira" }
+    ];
+
+    // Função para pegar item aleatório de um array
+    function getRandom(arr) {
+      const i = Math.floor(Math.random() * arr.length);
+      return arr[i];
+    }
+
+    // Preenche propaganda principal (id propaganda)
+    const p1 = getRandom(links1);
+    const el1 = document.getElementById('propaganda');
+    el1.textContent = "CONFIRA: " + p1.mensagem;
+    el1.href = p1.link;
+
+    // Preenche propaganda secundária (id propaganda2)
+    const p2 = getRandom(links2);
+    const el2 = document.getElementById('propaganda2');
+    el2.textContent = "OFERTA: " + p2.mensagem;
+    el2.href = p2.link;
+
+    // Função para gerar string aleatória de caracteres especiais e letras
+    function stringAleatoria(tamanho = 300) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*()_+-=[]{}|;:,.<>?';
+      let resultado = '';
+      for (let i = 0; i < tamanho; i++) {
+        resultado += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return resultado;
+    }
+
+    // Array com notícias do Flamengo
+    const noticiasFlamengo = [
+      {
+        titulo: "Flamengo vence clássico e assume liderança do Brasileirão",
+        texto: "Com gols de Pedro e Arrascaeta, o Flamengo derrotou o rival em um Maracanã lotado."
+      },
+      {
+        titulo: "Novo reforço internacional é anunciado",
+        texto: "O clube carioca confirmou a contratação de um meia argentino para a temporada 2025."
+      },
+      {
+        titulo: "Ingressos esgotados para final da Copa",
+        texto: "Flamengo x Palmeiras promete um jogo eletrizante com estádio cheio e clima de decisão."
+      }
+    ];
+
+    // Função que cria os elementos HTML das notícias e adiciona na div #noticias
+    function carregarNoticias() {
+      const container = document.getElementById('noticias');
+      noticiasFlamengo.forEach(noticia => {
+        const div = document.createElement('div');
+        div.className = 'noticia';
+
+        const h3 = document.createElement('h3');
+        h3.textContent = noticia.titulo;
+
+        const p = document.createElement('p');
+        p.textContent = noticia.texto;
+
+        div.appendChild(h3);
+        div.appendChild(p);
+        container.appendChild(div);
+      });
+    }
+
+    // Evento que executa funções ao carregar a página
+    document.addEventListener('DOMContentLoaded', () => {
+      // Preenche a div #hash com uma string aleatória
+      document.getElementById('hash').textContent = stringAleatoria(300);
+      // Carrega as notícias na página
+      carregarNoticias();
+    });
+  </script>
+
+  <script>
+    // Array com IDs dos vídeos do YouTube para exibir aleatoriamente
+    const videosYoutube = [
+      "AH4L35yh8bQ", // ID do vídeo (substituir pelos vídeos reais)
+    ];
+
+    // Função que retorna um ID aleatório de vídeo do array
+    function getRandomVideoId() {
+      return videosYoutube[Math.floor(Math.random() * videosYoutube.length)];
+    }
+
+    // Função que troca o vídeo exibido no container
+    function trocarVideo() {
+      const container = document.getElementById("video-container");
+      const videoId = getRandomVideoId();
+      // Insere iframe do YouTube no container, configurado para 100% largura e 315px altura
+      container.innerHTML = `
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}" 
+          frameborder="0" allowfullscreen></iframe>
+      `;
+    }
+
+    // Evento ao carregar a página para mostrar o primeiro vídeo
+    document.addEventListener('DOMContentLoaded', () => {
+      // Reutilizando para garantir conteúdo da hash e notícias
+      document.getElementById('hash').textContent = stringAleatoria(300);
+      carregarNoticias();
+      // Carrega o vídeo inicial automaticamente
+      trocarVideo();
+    });
+  </script>
+</body>
+</html>
